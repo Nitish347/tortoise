@@ -35,6 +35,7 @@ class _DeviceDetailsViewState extends State<DeviceDetailsView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
 
         appBar: AppBar(
           leadingWidth: 50,
@@ -51,6 +52,7 @@ class _DeviceDetailsViewState extends State<DeviceDetailsView> {
           ),),
         ),
       bottomSheet: Container(
+        color: Colors.white,
         height: 0.25.sh,
         width: 1.sw,
         padding: EdgeInsets.symmetric(horizontal: 12.w, vertical: 12.h),
@@ -222,7 +224,7 @@ class _DeviceDetailsViewState extends State<DeviceDetailsView> {
               ),
               SizedBox(height: 20.h,),
               Container(
-                color: AppColors.protectionBarBackground,
+                color: AppColors.darkGreen,
                 padding: EdgeInsets.symmetric(vertical: 18),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,

@@ -15,11 +15,19 @@ class DeviceCard extends StatelessWidget {
 
       child: Container(
         height: 130.h,
-        width: 0.4.sw,
+        width: 0.43.sw,
         decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.circular(12),
           border: Border.all(color: Colors.grey.shade200),
+            boxShadow: [
+              BoxShadow(
+                color: Colors.grey.withOpacity(0.1),
+                spreadRadius: 2,
+                blurRadius: 5,
+                offset: const Offset(0, 3), // changes position of shadow
+              )
+            ]
         ),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -31,7 +39,6 @@ class DeviceCard extends StatelessWidget {
               height: 80,
 
               decoration: BoxDecoration(
-                // color:Color(0xff+device.color),
                 borderRadius: BorderRadius.circular(12),
               ),
               child:     Image(image: NetworkImage("https://m.media-amazon.com/images/I/71D3JsltoLL.jpg")),

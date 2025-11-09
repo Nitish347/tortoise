@@ -49,9 +49,10 @@ class _SearchViewState extends State<SearchView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey.shade100,
+      backgroundColor: Colors.white,
       appBar: AppBar(
         backgroundColor: Colors.white,
+
         bottom: PreferredSize(
             preferredSize: Size(200, 50),
             child: Container(
@@ -153,8 +154,8 @@ class _SearchViewState extends State<SearchView> {
                         width: 1.sw,
                         child: Obx(() {
                           return Wrap(
-                            runSpacing: 15,
-                            spacing: 0.05.sw,
+                            runSpacing: 10.h,
+                            spacing: 10.w,
                             crossAxisAlignment: WrapCrossAlignment.center,
                             alignment: WrapAlignment.center,
                             children: List.generate(
